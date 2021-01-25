@@ -1,3 +1,4 @@
+![screensnip](https://user-images.githubusercontent.com/74613776/105721363-7d56ef00-5f4a-11eb-87eb-d43eac9b7870.PNG)
 
 # EasyBuy - ecommerce website
 
