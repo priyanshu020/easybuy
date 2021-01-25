@@ -1,6 +1,7 @@
+
 # EasyBuy - ecommerce website
 
-  This project is a simple ecommerce store with almost no back-end compatibiliy.
+  This project is a responsive e-commerce store with almost no back-end compatibiliy.
   
 ## Technologies
 
