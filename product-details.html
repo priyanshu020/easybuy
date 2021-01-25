@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="./assets/styles/product-details.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <title>Product</title>
+    </head>
+    <body>
+
+        <div class="large-wrapper">
+            <div class="large-container">
+
+                <section class="product-details">
+                    <div class="container">
+                        <header>
+                            <a class="logo" href="#"></a>
+                            <nav>
+                                <ul id="menu">
+                                    <li><a href="./index.html">Home</a></li>
+                                    <li><a href="./products.html">Products</a></li>
+                                    <li><a href="./about.html">About</a></li>
+                                    <li><a href="./contact.html">Contact</a></li>
+                                    <li><a href="./account.html">Account</a></li>
+                                </ul>
+                            </nav>
+                            <a href="/cart.html"><img src="./assets/images/cart.png" width="30px" height="30px"></a>
+                            <img class="menu-bar" src="./assets/images/menu.png" onclick="menutoggle()">
+                        </header>
+                    </div>
+
+                    <div class="small-container">
+                        <div class="row">
+                            <div class="col col-md-6 col-xs-12">
+                                <img src="./assets/images/gallery-1.jpg" id="productImg">
+                                <div class="row img-row">
+                                    <div class="col">
+                                        <div class="img-col">
+                                            <img src="./assets/images/gallery-1.jpg" class="smallImg">
+                                        </div>
+                                        <div class="img-col">
+                                            <img src="./assets/images/gallery-2.jpg" class="smallImg">
+                                        </div>
+                                        <div class="img-col">
+                                            <img src="./assets/images/gallery-3.jpg" class="smallImg">
+                                        </div>
+                                        <div class="img-col">
+                                            <img src="./assets/images/gallery-4.jpg" class="smallImg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-md-6 col-xs-12">
+                                <p>Home / T-Shirt</p>
+                                <h1>Red Printed T-Shirt by PUMA</h1>
+                                <h4>$13.00</h4>
+                                <select>
+                                    <option>Select Size</option>
+                                    <option>XXL</option>
+                                    <option>XL</option>
+                                    <option>Large</option>
+                                    <option>Medium</option>
+                                    <option>Small</option>
+                                </select>
+                                <input type="number" value="1">
+                                <a class="btn" href="./cart.html">Add To Cart</a>
+                                <h3>Product Details <i class="fa fa-indent"></i></h3>
+                                <p>Give your summer wardrobe a style with the PUMA Men's Active T-Shirt. Team it with a pair of shorts for your 
+                                    your morning workout or with denims for an evening out with the guys.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="title-container">
+                    <h2>Related Products</h2>
+                    <p>View More</p>
+                </div>
+
+                <section class="products">
+                    <div class="small-container">
+
+                        <div class="row">
+                            <div class="product col col-md-3 col-xs-12 col-sm-6">
+                                <img src="./assets/images/product-9.jpg">
+                                <h4>Roadster Formal Watch</h4>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                                <p>$50.00</p>
+                            </div>
+                            <div class="product col col-md-3 col-xs-12 col-sm-6">
+                                <img src="./assets/images/product-10.jpg">
+                                <h4>Sparx Sports Shoe</h4>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                                <p>$50.00</p>
+                            </div>
+                            <div class="product col col-md-3 col-xs-12 col-sm-6">
+                                <img src="./assets/images/product-11.jpg">
+                                <h4>Grey Sneaker</h4>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                                <p>$50.00</p>
+                            </div>
+                            <div class="product col col-md-3 col-xs-12 col-sm-6">
+                                <img src="./assets/images/product-12.jpg">
+                                <h4>Gym Lower</h4>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                                <p>$50.00</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="download col col-md-4 col-xs-12">
+                                <h3>Download our App</h3>
+                                <p>Download App for Android and iOS mobile phones</p>
+                                <div class="app-logo">
+                                    <a href="https://play.google.com/store/apps?hl=en_IN&gl=US"><img src="./assets/images/play-store.png" alt="Play Store"></a>
+                                    <a href="https://www.apple.com/in/app-store/"><img src="./assets/images/app-store.png" alt="App Store"></a>
+                                </div>
+                            </div>
+                            <div class="company col col-md-4 col-xs-12">
+                                <a href="#"><img src="./assets/images/logo-white.png"></a>
+                                <p>Our purpose is to sustainably make the pleasure and benefits of Sports accessible to the many.</p>
+                            </div>
+                            <div class="col col-md-2 col-xs-12 col-sm-6">
+                                <h3>Useful Links</h3>
+                                <ul>
+                                    <li><a href="#">Coupons</a></li>
+                                    <li><a href="#">Blog Post</a></li>
+                                    <li><a href="#">Return Policy</a></li>
+                                    <li><a href="#">Join Affiliate</a></li>
+                                </ul>
+                            </div>
+                            <div class="col col-md-2 col-xs-12 col-sm-6">
+                                <h3>Follow Us</h3>
+                                <ul>
+                                    <li><a href="https://www.facebook.com">Facebook</a></li>
+                                    <li><a href="https://www.twitter.com">Twitter</a></li>
+                                    <li><a href="https://www.instagram.com">Instagram</a></li>
+                                    <li><a href="https://www.youtube.com">Youtube</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="copyright">Copyrights &copy 2021 <span>EasyBuy</span> All Rights Reserved. | 
+                                Design & Development by <a href="#">Priyanshu</a></p>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+    </body>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./assets/scripts/App.js"></script>
+    <script>
+            // PRODUCT DETAILS STYLING
+        const productImg= document.getElementById("productImg");
+        const smallImg= document.getElementsByClassName("smallImg");
+
+        smallImg[0].onclick= function()
+        {
+            productImg.src= smallImg[0].src;
+        }
+        smallImg[1].onclick= function()
+        {
+            productImg.src= smallImg[1].src;
+        }
+        smallImg[2].onclick= function()
+        {
+            productImg.src= smallImg[2].src;
+        }
+        smallImg[3].onclick= function()
+        {
+            productImg.src= smallImg[3].src;
+        }
+    </script> 
+</html>

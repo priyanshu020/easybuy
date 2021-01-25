@@ -1,0 +1,526 @@
+/* CSS RESETS STARTS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+    vertical-align: baseline;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+    /* HTML5 display-role reset for older browsers starts here*/
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1;
+            font-family: 'Poppins', sans-serif;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+    /* HTML5 display-role reset for older browsers ends here*/
+
+/* CSS RESETS ENDS HERE */
+
+    /* CUSTOM SCROLL BAR STYLING STARTS HERE */
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    ::-webkit-scrollbar-thumb {
+        border-radius: 30px;
+        background: -webkit-gradient(linear, left top, left bottom, from(#ff8a00), to(#da1b60));
+    }
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    /* CUSTOM SCROLL BAR STYLING ENDS HERE */
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+    /* STICKY HEADER STYLING STARTS HERE*/
+    header.sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        transform: translateY(-200%);
+        transition: 0.3s;
+        z-index: 3;
+        width: 1300px;
+        margin: 0 auto;
+    }
+    body.scroll header.sticky {
+        -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+                transform: translateY(0);
+    }
+    /* STICKY HEADER STYLING ENDS HERE */
+.nav {
+    height: 100%;
+    margin: 0 auto;
+}
+.logo {
+    background: url(../images/logo.png) center no-repeat;
+    background-size: 160px;
+    height: 50px;
+    width: 155px;
+    margin-right: auto;
+    margin-top: 10px;
+}
+nav ul {
+    display: inline-block;
+}
+nav ul li {
+    display: inline-block;
+    padding: 12px 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #555555;
+    transition: all 0.3s;
+}
+nav ul li a:hover {
+    color: #ff523b;
+}
+header a img {
+    margin-left: 10px;
+}
+.menu-bar {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+    /* GRID STYLING STARTS HERE */
+    .row {
+        width: auto;
+    }
+    .col {
+        float: left;
+        box-sizing: border-box;
+    }
+    .col-md-12 { width: 100%;}
+    .col-md-11 { width: 91.662%;}
+    .col-md-10 { width: 83.332%;}
+    .col-md-9 { width: 75%;}
+    .col-md-8 { width: 66.662%;}
+    .col-md-7 { width: 58.331%;}
+    .col-md-6 { width: 50%;}
+    .col-md-5 { width: 41.662%;}
+    .col-md-4 { width: 33.332%;}
+    .col-md-3 { width: 25%;}
+    .col-md-2 { width: 16.662%;}
+    .col-md-1 { width: 8.332%;}
+
+    .row:before,
+    .row:after,
+    .group:before,
+    .group:after {
+        content: "";
+        display: table;
+    }
+    .row:after,
+    .group:after {
+        clear: both;
+    }
+    .row,
+    .group {
+        zoom: 1;
+    }
+    /* GRID STYLING ENDS HERE */
+
+/* ABOUT STYLING STARTS HERE */
+.about {
+    width: 100%;
+}
+.about .small-container {
+    width: 1080px;
+    padding: 0 80px;
+}
+/* ABOUT STYLING STARTS HERE */
+
+.clearfix {
+    overflow: auto;
+}
+
+/* FOOTER STYLING STARTS HERE */
+.footer {
+    background-color: #000000;
+    color: #555555;
+}
+.download h3, .download p {
+    text-align: left !important;
+}
+.app-logo {
+    margin-top: 20px;
+}
+.app-logo img {
+    width: 140px;
+    cursor: pointer;
+}
+.company {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-auto-flow: row;
+}
+.company img {
+    width: 225px;
+}
+.company a {
+    text-align: center;
+}
+.company p {
+    margin-top: 10px;
+}
+.footer h3 {
+    color: #ffffff;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.footer p {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+.footer .row {
+    padding-top: 80px;
+}
+.footer ul li {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.footer ul li a, .copyright a {
+    text-decoration: none;
+    color: #555555;
+    transition: all 0.3s;
+}
+.footer ul li a:hover, .copyright a:hover {
+    color: #ffffff;
+}
+.footer hr {
+    color: #ffffff;
+    margin-top: 50px;
+}
+.copyright {
+    padding: 10px;
+}
+/* FOOTER STYLING ENDS HERE */
+
+/* MEDIA QUERY STARTS HERE */
+
+    /* Extra-Small devices (portrait phones, landscape phones, less than 767px) */ 
+@media (max-width: 767.98px) {
+        /* Responsive Menu Styling */
+        nav ul {
+            position: fixed;
+            top: 88px;
+            left: 0;
+            background: #333333;
+            width: 100%;
+            overflow: hidden;
+            transition: max-height 0.5s;
+            z-index: 10;
+        }
+        nav ul li {
+            display: block;
+            margin: 5px auto;
+            text-align: center;
+        }
+        nav ul li a {
+            color: #ffffff;
+        }
+        .menu-bar {
+            display: block;
+            cursor: pointer;
+        }
+        /* Responsive Menu Styling Ends here */
+        /* Sticky Header Styling Starts Here */
+        header.sticky {
+            width: auto;
+            margin: 0 20px;
+        }
+        /* Sticky Header Styling Ends here */
+        /* Grid Styling */
+        .row {
+            width: auto;
+            margin-right: 0px;
+        }
+        .col {
+            float: left;
+            width: 100%;
+            padding-right: 0px;
+            box-sizing: border-box;
+        }
+        .col-xs-12 { width: 100%;}
+        .col-xs-11 { width: 91.662%;}
+        .col-xs-10 { width: 83.332%;}
+        .col-xs-9 { width: 75%;}
+        .col-xs-8 { width: 66.662%;}
+        .col-xs-7 { width: 58.331%;}
+        .col-xs-6 { width: 50%;}
+        .col-xs-5 { width: 41.662%;}
+        .col-xs-4 { width: 33.332%;}
+        .col-xs-3 { width: 25%;}
+        .col-xs-2 { width: 16.662%;}
+        .col-xs-1 { width: 8.332%;}
+        /* Grid Styling Ends Here */
+    /* About Styling Starts Here */
+    .about {
+        width: auto;
+    }
+    .about .container {
+        width: auto;
+    }
+    .about .small-container {
+        width: auto;
+        padding: 0;
+        margin: 0 20px;
+    }
+    /* Footer Styling starts here */
+    .footer {
+        margin-top: 30px;
+        text-align: center;
+    }
+    .download h3 {
+        text-align: center !important;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .download p {
+        text-align: center !important;
+    }
+    .app-logo {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .app-logo img {
+        width: 140px;
+        cursor: pointer;
+    }
+    .company {
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        grid-auto-flow: row;
+    }
+    .company img {
+        width: 225px;
+    }
+    .company p {
+        margin-top: 10px;
+    }
+    .footer h3 {
+        margin-bottom: 15px;
+        margin-top: 30px;
+    }
+    .footer .row {
+        padding-top: 30px;
+    }
+    .footer hr {
+        margin-top: 20px;
+    }  
+    /* Footer Styling ends here */
+}
+
+    /* Small devices (tablets, 768px and up) */ 
+@media (min-width: 768px) and (max-width: 991.98px) {
+        /* Responsive Menu Styling */
+        nav ul {
+            position: fixed;
+            top: 88px;
+            left: 0;
+            background: #333333;
+            width: 100%;
+            overflow: hidden;
+            transition: max-height 0.5s;
+            z-index: 10;
+        }
+        nav ul li {
+            display: block;
+            margin: 10px auto;
+            text-align: center;
+        }
+        nav ul li a {
+            color: #ffffff;
+        }
+        .menu-bar {
+            display: block;
+            cursor: pointer;
+        }
+        /* Responsive Menu Styling Ends here */
+        /* Sticky Header Styling Starts Here */
+        header.sticky {
+            width: auto;
+            margin: 0 20px;
+        }
+        /* Sticky Header Styling Ends here */
+        /* Grid Styling */
+        .row {
+            margin-right: 0px
+        }
+        .col {
+            float: left;
+            width: 100%;
+            padding-right: 0px;
+            box-sizing: border-box;
+        }
+        .col-sm-12 { width: 100%;}
+        .col-sm-11 { width: 91.662%;}
+        .col-sm-10 { width: 83.332%;}
+        .col-sm-9 { width: 75%;}
+        .col-sm-8 { width: 66.662%;}
+        .col-sm-7 { width: 58.331%;}
+        .col-sm-6 { width: 50%;}
+        .col-sm-5 { width: 41.662%;}
+        .col-sm-4 { width: 33.332%;}
+        .col-sm-3 { width: 25%;}
+        .col-sm-2 { width: 16.662%;}
+        .col-sm-1 { width: 8.332%;}
+        /* Grid Styling Ends Here */
+    /* About Styling Starts Here */
+    .about {
+        width: auto;
+    }
+    .about .container {
+        width: auto;
+    }
+    .about .small-container {
+        width: auto;
+        padding: 0;
+        margin: 0 20px;
+    }
+    /* About Styling Ends Here */
+    /* Footer Styling starts here */
+    .footer {
+        margin-top: 30px;
+        text-align: center;
+    }
+    .download h3 {
+        text-align: center !important;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .download p {
+        text-align: center !important;
+    }
+    .app-logo {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .app-logo img {
+        width: 140px;
+        cursor: pointer;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .company {
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        grid-auto-flow: row;
+    }
+    .company img {
+        width: 225px;
+    }
+    .company p {
+        margin-top: 10px;
+    }
+    .footer h3 {
+        margin-bottom: 15px;
+        margin-top: 30px;
+    }
+    .footer .row {
+        padding-top: 30px;
+    }
+    .footer hr {
+        margin-top: 20px;
+    }  
+    /* Footer Styling ends here */
+}
+
+    /* Medium devices (desktops, 992px and up) */ 
+@media (min-width: 992px) and (max-width: 1199.98px) {
+        /* Sticky Header Styling */
+        header.sticky {
+            width: auto;
+            margin: 0 30px;
+        }
+        /* Sticky Header Styling ends here */
+    /* About Styling starts here */
+    .about {
+        width: auto;
+    }
+    .about .container {
+        width: auto;
+    }
+    .about .small-container {
+        width: auto;
+        padding: 0 50px;
+        margin: 60px 20px;
+    }
+    /* About Styling ends here */
+    /* Footer Styling starts here */
+    .footer {
+        width: auto;
+    }
+    .footer .row {
+        margin-right: 0px;
+    }
+    .footer .col {
+        padding-right: 0px;
+    }
+    /* Footer Styling ends here */
+}
+
+    /* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .large-wrapper {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 2000px;
+    }
+    .large-container {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 2000px;
+    }
+}

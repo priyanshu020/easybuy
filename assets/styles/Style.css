@@ -1,0 +1,1157 @@
+/* CSS RESETS STARTS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+    vertical-align: baseline;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+    /* HTML5 display-role reset for older browsers starts here*/
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1;
+            font-family: 'Poppins', sans-serif;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+    /* HTML5 display-role reset for older browsers ends here*/
+
+/* CSS RESETS ENDS HERE */
+    
+    /* CUSTOM SCROLL BAR STYLING STARTS HERE */
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    ::-webkit-scrollbar-thumb {
+        border-radius: 30px;
+        background: -webkit-gradient(linear, left top, left bottom, from(#ff8a00), to(#da1b60));
+    }
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    /* CUSTOM SCROLL BAR STYLING ENDS HERE */
+
+    /* POPUP NEWSLETTER STYLING STARTS HERE */
+    #popupMain {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: rgba(243, 70, 1, 0.49);
+        z-index: 1001;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #popup .fa-window-close {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 1.2rem;
+    }
+    #popupimg {
+        background: url(../images/popupimg.jpg) center no-repeat;
+        background-size: cover;
+        width: 450px;
+        height: 330px;
+        margin: 0px 20px;
+        float: left;
+    }
+    #popup {
+        width: 1000px;
+        height: 435px;
+        background: #ffffff;
+    }
+    #newsHeading {
+        font-size: 45px;
+        margin-top: 60px;
+    }
+    #popup p {
+        margin-top: 10px;
+        line-height: 21px;
+    }
+    #newsHeading span {
+        color: #ff523b;
+    }
+    #popup input {
+        width: 300px;
+        height: 30px;
+        margin-top: 20px;
+        padding: 0 10px;
+        border: 1px solid #ff523b;
+    }
+    #popup .btn {
+        margin: 20px 0;
+    }
+    #popup .btn:focus {
+        outline: none;
+    }
+    /* POPUP NEWSLETTER STYLING ENDS HERE */
+.cover-main {
+    width: 100%;
+    height: 100vh !important;
+    background: radial-gradient(#ffffff, #ffd6d6);
+}
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+    /* STICKY HEADER STYLING STARTS HERE*/
+    header.sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        transform: translateY(-200%);
+        transition: 0.3s;
+        z-index: 3;
+        width: 1300px;
+        margin: 0 auto;
+    }
+    body.scroll header.sticky {
+        -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+                transform: translateY(0);
+    }
+    /* STICKY HEADER STYLING ENDS HERE */
+.logo {
+    background: url(../images/logo.png) center no-repeat;
+    background-size: 160px;
+    height: 50px;
+    width: 155px;
+    margin-right: auto;
+    margin-top: 10px;
+}
+nav ul {
+    display: inline-block;
+}
+nav ul li {
+    display: inline-block;
+    padding: 12px 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #555555;
+    transition: all 0.3s;
+}
+nav ul li a:hover {
+    color: #ff523b;
+}
+header a img {
+    margin-left: 10px;
+}
+.menu-bar {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+    /* GRID STYLING STARTS HERE */
+    .row {
+        margin-right: -80px
+    }
+    .col {
+        float: left;
+        width: 100%;
+        padding-right: 80px;
+        box-sizing: border-box;
+    }
+    .col-md-11 { width: 91.662%;}
+    .col-md-10 { width: 83.332%;}
+    .col-md-9 { width: 75%;}
+    .col-md-8 { width: 66.662%;}
+    .col-md-7 { width: 58.331%;}
+    .col-md-6 { width: 50%;}
+    .col-md-5 { width: 41.662%;}
+    .col-md-4 { width: 33.332%;}
+    .col-md-3 { width: 25%;}
+    .col-md-2 { width: 16.662%;}
+    .col-md-1 { width: 8.332%;}
+
+    .row:before,
+    .row:after,
+    .group:before,
+    .group:after {
+        content: "";
+        display: table;
+    }
+    .row:after,
+    .group:after {
+        clear: both;
+    }
+    .row,
+    .group {
+        zoom: 1;
+    }
+    /* GRID STYLING ENDS HERE */
+.cover-main-banner {
+    padding-top: 180px;
+}
+.cover-main-banner h1 {
+    width: 470px;
+    font-size: 50px;
+    line-height: 55px;
+}
+.cover-main-banner p {
+    width: 520px;
+    padding-top: 23px;
+    font-size: 14px;
+    line-height: 19px;
+}
+.btn {
+    font-size: 15px;
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    background: #ff523b;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: 0.5s all;
+}
+.btn:hover {
+    background-color: #563434;
+}
+.cover-main-pic img {
+    width: 790px;
+    height: 650px;
+    padding-left: 80px;
+}
+/* COVER-MAIN STYLING ENDS HERE */
+
+/* CATEGORIES STYLING STARTS HERE */
+.categories {
+    width: 100%;
+    padding-top: 70px;
+}
+.small-container {
+    width: 1080px;
+    margin: 0 auto;
+}
+.categories .small-container .row {
+    margin-right: -40px;
+    width: auto;
+}
+.categories .small-container .row .col {
+    float: left;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+.categories .small-container .row .col img {
+    width: 260px;
+    padding-bottom: 70px;
+}
+/* CATEGORIES STYLING ENDS HERE */
+
+/* PRODUCTS STYLING STARTS HERE */
+.products {
+    width: 100%;
+}
+.products .small-container h2 {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555555;
+}
+.products .small-container h2:after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+}
+.products .small-container .row {
+    width: 100%;
+    padding: 0 100px;
+}
+.product img {
+    width: 200px;
+    cursor: pointer;
+}
+.product a {
+    text-decoration: none;
+}
+.product h4 {
+    color: #555555;
+    font-weight: normal;
+    padding-top: 20px;
+}
+.product p {
+    font-size: 14px;
+    padding-top: 10px;
+}
+.rating .fa {
+    color: #ff523b;
+    padding-top: 8px;
+}
+.product {
+    transition: transform 0.5s;
+    padding-bottom: 70px;
+}
+.product:hover {
+    transform: translateY(-5px);
+}
+/* PRODUCTS STYLING ENDS HERE */
+
+.clearfix {
+    overflow: auto;
+}
+
+/* LATEST-PRODUCTS STYLING ENDS HERE */
+.latest-products {
+    width: 100%;
+}
+.latest-products .small-container h2 {
+    text-align: center;
+    margin: 80px auto;
+    position: relative;
+    line-height: 60px;
+    color: #555555;
+}
+.latest-products .small-container h2:after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+}
+.latest-products .small-container .row {
+    width: 100%;
+    padding: 0 100px;
+}
+/* LATEST-PRODUCTS STYLING ENDS HERE */
+
+/* OFFERS STYLING STARTS HERE */
+.offers {
+    width: 100%;
+    margin-top: 30px;
+    background: radial-gradient(#ffffff, #ffd6d6);
+    padding: 70px 0;
+}
+.offers .small-container .row {
+    width: 1080px;
+    margin-right: -20px;
+}
+.offers .small-container .row .col {
+    float: left;
+    box-sizing: border-box;
+    padding-right: 20px;
+}
+.offers .small-container .row .col img {
+    width: 400px;
+}
+.offers p {
+    margin-top: 55px;
+}
+.offers h1 {
+    margin-top: 25px;
+    font-size: 50px;
+    margin-bottom: 26px;
+}
+.offers small {
+    color: #555555;
+    line-height: 20px;
+}
+/* OFFERS STYLING ENDS HERE */
+
+/* TESTIMONIALS STYLING STARTS HERE */
+.testimonials {
+    margin-top: 100px;
+}
+.testimonials .row {                             
+    width: 100%;
+    display: grid;                                          /* For centering multiple childs in grid */
+    justify-content: center;                                /* For centering multiple childs in grid */
+    align-content: center;                                  /* For centering multiple childs in grid */
+    gap: 30px;                                              /* For centering multiple childs in grid */
+    grid-auto-flow: column;                                 /* For centering multiple childs in grid */
+}
+.testimonials .col {
+    width: 300px;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.testimonials .col:hover {
+    transform: translateY(-10px);
+}
+.testimonials .fa-quote-left {
+    font-size: 34px;
+    color: #ff523b;
+}
+.testimonials p {
+    font-size: 12px;
+    line-height: 20px;
+    margin: 12px 0;
+    color: #777777;
+}
+.testimonials h3 {
+    font-weight: 600;
+    font-size: 16px;
+    color: #555555;
+    margin-top: 10px;
+}
+.testimonials img {
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+/* TESTIMONIALS STYLING ENDS HERE */
+
+/* BRANDS STYLING STARTS HERE */
+.brands {
+    margin-top: 120px;
+}
+.brands .row {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+    grid-auto-flow: column;
+}
+.brands .col {
+    width: 200px;
+}
+.brands .col img {
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: all 0.5s;
+}
+.brands .col img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.2);
+}
+/* BRANDS STYLING ENDS HERE */
+
+/* FOOTER STYLING STARTS HERE */
+.footer {
+    margin-top: 100px;
+    background-color: #000000;
+    color: #555555;
+}
+.download h3, .download p {
+    text-align: left !important;
+}
+.app-logo {
+    margin-top: 20px;
+}
+.app-logo img {
+    width: 140px;
+    cursor: pointer;
+}
+.company {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-auto-flow: row;
+}
+.company img {
+    width: 225px;
+}
+.company a {
+    text-align: center;
+}
+.company p {
+    margin-top: 10px;
+}
+.footer h3 {
+    color: #ffffff;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.footer p {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+.footer .row {
+    padding-top: 80px;
+}
+.footer ul li {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.footer ul li a, .copyright a {
+    text-decoration: none;
+    color: #555555;
+    transition: all 0.3s;
+}
+.footer ul li a:hover, .copyright a:hover {
+    color: #ffffff;
+}
+.footer hr {
+    color: #ffffff;
+    margin-top: 50px;
+}
+.copyright {
+    padding: 10px;
+}
+/* FOOTER STYLING ENDS HERE */
+
+/* MEDIA QUERY STARTS HERE */
+
+    /* Extra-Small devices (portrait phones, landscape phones, less than 767px) */ 
+@media (max-width: 767.98px) {
+        /* Popup Newsletter Styling starts here */
+        #popupMain {
+            width: auto;
+            padding: 0 20px;
+        }
+        #popupimg {
+            display: none;
+        }
+        #popup {
+            width: auto;
+            height: auto;
+            text-align: center;
+            padding: 0 10px;
+        }
+        #newsHeading {
+            font-size: 25px;
+            line-height: 30px;
+            margin-top: 0px;
+            width: auto;
+        }
+        #popup p {
+            margin-top: 10px;
+            font-size: 10px;
+            line-height: 15px;
+            width: auto;
+        }
+        #popup input {
+            width: auto;
+            height: 25px;
+            margin-top: 20px;
+            padding: 0 10px;
+        }
+        #popup .btn {
+            margin: 20px 0;
+        }
+        /* Popup Newsletter Styling ends here */
+    /* Cover Main Styling starts here */
+    .cover-main {
+        width: auto;
+        height: auto !important;
+        text-align: center;
+    }
+    .container {
+        width: auto;
+        padding: 0 20px;
+    }
+        /* Responsive Menu Styling */
+        nav ul {
+            position: fixed;
+            top: 88px;
+            left: 0;
+            background: #333333;
+            width: 100%;
+            overflow: hidden;
+            transition: max-height 0.5s;
+            z-index: 10;
+        }
+        nav ul li {
+            display: block;
+            margin: 5px auto;
+        }
+        nav ul li a {
+            color: #ffffff;
+        }
+        .menu-bar {
+            display: block;
+            cursor: pointer;
+        }
+        /* Responsive Menu Styling Ends here*/
+        /* Sticky Header Styling Starts Here*/
+        header.sticky {
+            width: auto;
+            margin: 0 20px;
+        }
+        /* Sticky Header Styling Ends here */
+        /* Grid Styling */
+        .row {
+            margin-right: 0px
+        }
+        .col {
+            float: left;
+            width: 100%;
+            padding-right: 0px;
+            box-sizing: border-box;
+        }
+        .col-xs-12 { width: 100%;}
+        .col-xs-11 { width: 91.662%;}
+        .col-xs-10 { width: 83.332%;}
+        .col-xs-9 { width: 75%;}
+        .col-xs-8 { width: 66.662%;}
+        .col-xs-7 { width: 58.331%;}
+        .col-xs-6 { width: 50%;}
+        .col-xs-5 { width: 41.662%;}
+        .col-xs-4 { width: 33.332%;}
+        .col-xs-3 { width: 25%;}
+        .col-xs-2 { width: 16.662%;}
+        .col-xs-1 { width: 8.332%;}
+        /* Grid Styling Ends Here */
+    .cover-main-banner {
+        padding-top: 50px;
+    }
+    .cover-main-banner h1 {
+        width: auto;
+        font-size: 45px;
+        line-height: 50px;
+    }
+    .cover-main-banner p {
+        width: auto;
+    }
+    .cover-main-pic img {
+        width: 290px;
+        height: 290px;
+        padding-left: 0;
+        margin: 0 auto;
+    }
+    /* Cover Main Styling ends here */
+    /* Categories Styling starts here */
+    .categories {
+        width: auto;
+        padding-top: 50px;
+    }
+    .small-container {
+        width: auto;
+        margin: 0 20px;
+    }
+    .categories .small-container .row {
+        margin: 0;
+    }
+    .categories .small-container .row .col {
+        padding: 0;
+    }
+    .categories .small-container .row .col img {
+        width: 260px;
+        height: 340px;
+        padding-bottom: 20px;
+        display: flex;
+        margin: 0 auto;
+    }
+    /* Categories Styling ends here */
+    /* Products Styling starts here */
+    .products {
+        width: auto;
+        margin-top: 40px;
+        text-align: center;
+    }
+    .products .small-container .row {
+        width: auto;
+        padding: 0;
+    }
+    .product {
+        padding-bottom: 40px;
+    }
+    .product img {
+        width: 200px;
+        display: flex;        
+        margin: 0 auto;
+    }
+    /* Products Styling ends here */
+    /* Offers Styling starts here */
+    .offers {
+        width: auto;
+        margin-top: 0px;
+        padding: 40px 0;
+    }
+    .offers .small-container .row {
+        width: auto;
+        margin: 0;
+        text-align: center;
+    }
+    .offers .small-container .row .col {
+        padding: 0px;
+    }
+    .offers .small-container .row .col img {
+        width: 280px;
+    }
+    .offers p {
+        margin-top: 30px;
+    }
+    /* Offers Styling ends here */
+    /* Testimonials Styling starts here */
+    .testimonials {
+        width: auto;
+        margin-top: 30px;
+    }
+    .testimonials .row {                             
+        width: auto;
+        display: grid;                                          /* For centering multiple childs in grid */
+        justify-content: center;                                /* For centering multiple childs in grid */
+        align-content: center;                                  /* For centering multiple childs in grid */
+        grid-auto-flow: row;                                    /* For centering multiple childs in grid */
+    }
+    /* Testimonials Styling ends here */
+    /* Brands Styling starts here */
+    .brands {
+        margin-top: 10px;
+    }
+    .brands .row {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        gap: 30px;
+        grid-auto-flow: row;
+    }
+    /* Brands Styling ends here */
+    /* Footer Styling starts here */
+    .footer {
+        margin-top: 30px;
+        text-align: center;
+    }
+    .download h3 {
+        text-align: center !important;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .download p {
+        text-align: center !important;
+    }
+    .app-logo {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .app-logo img {
+        width: 140px;
+        cursor: pointer;
+    }
+    .company {
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        grid-auto-flow: row;
+    }
+    .company img {
+        width: 225px;
+    }
+    .company p {
+        margin-top: 10px;
+    }
+    .footer h3 {
+        margin-bottom: 15px;
+        margin-top: 30px;
+    }
+    .footer .row {
+        padding-top: 30px;
+    }
+    .footer hr {
+        margin-top: 20px;
+    }  
+    /* Footer Styling ends here */
+}
+
+    /* Small devices (tablets, 768px and up) */ 
+@media (min-width: 768px) and (max-width: 991.98px) {
+        /* Popup Newsletter Styling starts here */
+        #popup .fa-window-close {
+            padding: 1rem;
+        }
+        #popupimg {
+            width: 320px;
+            height: 250px;
+            margin: 0px 20px;
+            margin-bottom: 50px;
+        }
+        #popup {
+            width: 600px;
+            height: auto;
+            padding: 0 10px;
+        }
+        #newsHeading {
+            width: auto;
+            font-size: 30px;
+            line-height: 35px;
+            margin-top: 20px;
+        }
+        #popup p {
+            width: auto;
+            margin-top: 10px;
+            font-size: 11px;
+            line-height: 16px;
+        }
+        #newsHeading span {
+            color: #ff523b;
+        }
+        #popup input {
+            width: auto;
+            height: 25px;
+        }
+        #popup .btn {
+            margin: 15px 0;
+        }
+        /* Popup Newsletter Styling ends here */
+    /* Cover Main Styling starts here */
+    .cover-main {
+        width: auto;
+        height: auto;
+        text-align: center;
+    }
+    .container {
+        width: auto;
+        padding: 0 20px;
+    }
+        /* Responsive Menu Styling */
+        nav ul {
+            position: fixed;
+            top: 88px;
+            left: 0;
+            background: #333333;
+            width: 100%;
+            overflow: hidden;
+            transition: max-height 0.5s;
+            z-index: 10;
+        }
+        nav ul li {
+            display: block;
+            margin: 10px auto;
+        }
+        nav ul li a {
+            color: #ffffff;
+        }
+        .menu-bar {
+            display: block;
+            cursor: pointer;
+        }
+        /* Responsive Menu Styling Ends here */
+        /* Sticky Header Styling Starts Here*/
+        header.sticky {
+            width: auto;
+            margin: 0 20px;
+        }
+        /* Sticky Header Styling Ends here */
+        /* Grid Styling */
+        .row {
+            margin-right: 0px
+        }
+        .col {
+            float: left;
+            width: 100%;
+            padding-right: 0px;
+            box-sizing: border-box;
+        }
+        .col-sm-12 { width: 100%;}
+        .col-sm-11 { width: 91.662%;}
+        .col-sm-10 { width: 83.332%;}
+        .col-sm-9 { width: 75%;}
+        .col-sm-8 { width: 66.662%;}
+        .col-sm-7 { width: 58.331%;}
+        .col-sm-6 { width: 50%;}
+        .col-sm-5 { width: 41.662%;}
+        .col-sm-4 { width: 33.332%;}
+        .col-sm-3 { width: 25%;}
+        .col-sm-2 { width: 16.662%;}
+        .col-sm-1 { width: 8.332%;}
+        /* Grid Styling Ends Here */
+    .cover-main-banner {
+        padding-top: 100px;
+    }
+    .cover-main-banner h1 {
+        width: auto;
+        font-size: 45px;
+        line-height: 50px;
+    }
+    .cover-main-banner p {
+        width: auto;
+    }
+    .cover-main-pic img {
+        width: 600px;
+        height: 550px;
+        padding-left: 0;
+        margin: 0 auto;
+    }
+    /* Cover Main Styling ends here */
+    /* Categories Styling starts here */
+    .categories {
+        width: auto;
+        padding-top: 50px;
+    }
+    .small-container {
+        width: auto;
+        margin: 0 20px;
+    }
+    .categories .small-container .row {
+        margin: 0;
+    }
+    .categories .small-container .row .col {
+        padding: 0;
+    }
+    .categories .small-container .row .col img {
+        width: 220px;
+        height: 300px;
+        padding-bottom: 20px;
+        display: flex;
+        margin: 0 auto;
+    }
+    /* Categories Styling ends here */
+    /* Products Styling starts here */
+    .products {
+        width: auto;
+        margin-top: 40px;
+        text-align: center;
+    }
+    .products .small-container .row {
+        width: auto;
+        padding: 0;
+    }
+    .product {
+        padding-bottom: 40px;
+    }
+    .product img {
+        width: 200px;
+    }
+    /* Products Styling ends here */
+    /* Offers Styling starts here */
+    .offers {
+        width: auto;
+        margin-top: 0px;
+        padding: 40px 0;
+    }
+    .offers .small-container .row {
+        width: auto;
+        margin: 0;
+        text-align: center;
+    }
+    .offers .small-container .row .col {
+        padding: 0px;
+    }
+    .offers .small-container .row .col img {
+        width: 280px;
+    }
+    .offers p {
+        margin-top: 30px;
+    }
+    /* Offers Styling ends here */
+    /* Testimonials Styling starts here */
+    .testimonials {
+        width: auto;
+        margin-top: 30px;
+    }
+    .testimonials .row {                             
+        width: auto;
+        display: flex;                                           /* For centering multiple childs in grid */
+    }
+    /* Testimonials Styling ends here */
+    /* Brands Styling starts here */
+    .brands {
+        margin: 70px auto;
+    }
+    .brands .row {
+        width: auto;
+        display: flex;
+    }
+    /* Brands Styling ends here */
+    /* Footer Styling starts here */
+    .footer {
+        margin-top: 30px;
+        text-align: center;
+    }
+    .download h3 {
+        text-align: center !important;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .download p {
+        text-align: center !important;
+    }
+    .app-logo {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .app-logo img {
+        width: 140px;
+        cursor: pointer;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .company {
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        grid-auto-flow: row;
+    }
+    .company img {
+        width: 225px;
+    }
+    .company p {
+        margin-top: 10px;
+    }
+    .footer h3 {
+        margin-bottom: 15px;
+        margin-top: 30px;
+    }
+    .footer .row {
+        padding-top: 30px;
+    }
+    .footer hr {
+        margin-top: 20px;
+    }  
+    /* Footer Styling ends here */
+}
+
+    /* Medium devices (desktops, 992px and up) */ 
+@media (min-width: 992px) and (max-width: 1199.98px) {
+        /* STICKY HEADER STYLING STARTS HERE*/
+        header.sticky {
+            width: auto;
+            margin: 0 30px;
+        }
+        /* STICKY HEADER STYLING ENDS HERE */
+    /* Cover Main Styling */
+    .cover-main {
+        width: auto;
+        height: auto !important;
+    }
+    .cover-main .row {
+        width: auto;
+        margin-right: 0px;
+    }
+    .container {
+        width: auto;
+        margin: 0 20px;
+    }
+    .cover-main-pic {
+        width: 400px;
+        padding-right: 0px;
+    }
+    .cover-main-pic img {
+        width: 600px;
+        height: 500px;
+        padding-left: 120px;
+    }
+    /* Categories Styling */
+    .categories {
+        width: auto;
+    }
+    .small-container {
+        width: auto;
+        margin: 0 20px;
+    }
+    .categories .small-container .row {
+        margin: 0;
+    }
+    .categories .small-container .row .col {
+        padding: 0;
+    }
+    .categories .small-container .row .col img {
+        display: flex;
+        margin: 0 auto;
+    }
+    /* Products Styling */
+    .products {
+        width: auto;
+    }
+    .product img {
+        width: 180px;
+    }
+    /* Offers Styling */
+    .offers {
+        width: auto;
+    }
+    .offers .small-container .row {
+        width: auto;
+        margin: 0;
+    }
+    .offers .small-container .row .col {
+        padding: 0px;
+    }
+    .offers p {
+        margin-top: 30px;
+    }
+    /* Testimonials Styling */
+    .testimonials {
+        width: auto;
+    }
+    /* Brands Styling */
+    .brands {
+        width: auto;
+    }
+    .brands .row {
+        width: auto;
+        margin-right: 0px;
+    }
+    .brands .col {
+        width: auto;
+        padding-right: 0px;
+    }
+    /* Footer Styling */
+    .footer {
+        width: auto;
+    }
+    .footer .row {
+        margin-right: 0px;
+    }
+    .footer .col {
+        padding-right: 0px;
+    }
+}
+
+    /* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .large-wrapper {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 2000px;
+    }
+    .large-container {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 2000px;
+    }
+    .cover-main {
+        height: auto;
+    }
+}

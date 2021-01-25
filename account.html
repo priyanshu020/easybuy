@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="./assets/styles/account.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <title>Account</title>
+    </head>
+    <body>
+
+        <div class="large-wrapper">
+            <div class="large-container">
+
+                    <div class="container">
+                        <header>
+                            <a class="logo" href="#"></a>
+                            <nav>
+                                <ul id="menu">
+                                    <li><a href="./index.html">Home</a></li>
+                                    <li><a href="./products.html">Products</a></li>
+                                    <li><a href="./about.html">About</a></li>
+                                    <li><a href="./contact.html">Contact</a></li>
+                                    <li><a href="#">Account</a></li>
+                                </ul>
+                            </nav>
+                            <a href="./cart.html"><img src="./assets/images/cart.png" width="30px" height="30px"></a>
+                            <img class="menu-bar" src="./assets/images/menu.png" onclick="menutoggle()">
+                        </header>
+                    </div>
+
+                <section class="account">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col col-md-6">
+                                <img src="./assets/images/image1.png" width="100%">
+                            </div>
+                            <div class="col col-md-6">
+                                <div class="form-container">
+                                    <div class="form-btn">
+                                        <span onclick="login()">Login</span>
+                                        <span onclick="register()">Register</span>
+                                        <hr id="indicator">
+                                    </div>
+                                    <form id="loginForm">
+                                        <input type="text" placeholder="Username">
+                                        <input type="password" placeholder="Password">
+                                        <button type="submit" class="btn">Login</button>
+                                        <a href="">Forgot Password</a>
+                                    </form>
+                                    <form id="regForm">
+                                        <input type="text" placeholder="Username">
+                                        <input type="email" placeholder="Email">
+                                        <input type="password" placeholder="Password">
+                                        <button type="submit" class="btn">Register</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="download col col-md-4 col-xs-12">
+                                <h3>Download our App</h3>
+                                <p>Download App for Android and iOS mobile phones</p>
+                                <div class="app-logo">
+                                    <a href="https://play.google.com/store/apps?hl=en_IN&gl=US"><img src="./assets/images/play-store.png" alt="Play Store"></a>
+                                    <a href="https://www.apple.com/in/app-store/"><img src="./assets/images/app-store.png" alt="App Store"></a>
+                                </div>
+                            </div>
+                            <div class="company col col-md-4 col-xs-12">
+                                <a href="#"><img src="./assets/images/logo-white.png"></a>
+                                <p>Our purpose is to sustainably make the pleasure and benefits of Sports accessible to the many.</p>
+                            </div>
+                            <div class="col col-md-2 col-xs-12 col-sm-6">
+                                <h3>Useful Links</h3>
+                                <ul>
+                                    <li><a href="#">Coupons</a></li>
+                                    <li><a href="#">Blog Post</a></li>
+                                    <li><a href="#">Return Policy</a></li>
+                                    <li><a href="#">Join Affiliate</a></li>
+                                </ul>
+                            </div>
+                            <div class="col col-md-2 col-xs-12 col-sm-6">
+                                <h3>Follow Us</h3>
+                                <ul>
+                                    <li><a href="https://www.facebook.com">Facebook</a></li>
+                                    <li><a href="https://www.twitter.com">Twitter</a></li>
+                                    <li><a href="https://www.instagram.com">Instagram</a></li>
+                                    <li><a href="https://www.youtube.com">Youtube</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="copyright">Copyrights &copy 2021 <span>EasyBuy</span> All Rights Reserved. | 
+                                Design & Development by <a href="#">Priyanshu</a></p>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+    </body>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./assets/scripts/App.js"></script>
+    <script>
+            //JS TOGGLE FORM
+        var loginForm= document.getElementById("loginForm");
+        var regForm= document.getElementById("regForm");
+        const indicator= document.getElementById("indicator");
+
+        function register() {
+            regForm.style.transform= "translateX(0px)";
+            loginForm.style.transform= "translateX(0px)";
+            indicator.style.transform= "translateX(52px)";
+        }
+
+        function login() {
+            regForm.style.transform= "translateX(300px)";
+            loginForm.style.transform= "translateX(300px)";
+            indicator.style.transform= "translateX(-52px)";
+        }
+    </script> 
+</html>
