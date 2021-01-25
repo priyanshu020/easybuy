@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* CSS RESETS STARTS */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -69,9 +76,15 @@ time, mark, audio, video {
 header {
     width: 100%;
     height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
     /* STICKY HEADER STYLING STARTS HERE*/
     header.sticky {
@@ -79,7 +92,11 @@ header {
         top: 0;
         left: 0;
         right: 0;
-        transform: translateY(-200%);
+        -webkit-transform: translateY(-200%);
+            -ms-transform: translateY(-200%);
+                transform: translateY(-200%);
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
         transition: 0.3s;
         z-index: 3;
         width: 1300px;
@@ -113,6 +130,8 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #555555;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
 }
 nav ul li a:hover {
@@ -132,7 +151,8 @@ header a img {
     }
     .col {
         float: left;
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
     }
     .col-md-12 { width: 100%;}
     .col-md-11 { width: 91.662%;}
@@ -213,6 +233,8 @@ header a img {
     background: #ff523b;
     padding: 10px 25px;
     border-radius: 30px;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
     transition: 0.5s all;
 }
 .btn:hover {
@@ -234,9 +256,13 @@ header a img {
     margin: 0 auto;
 }
 .product-details .small-container .img-row .col {
+    display: -ms-grid;
     display: grid;
-    justify-content: left;
-    align-content: center;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -ms-flex-line-pack: center;
+        align-content: center;
     grid-auto-flow: column;
     gap: 10px;
 }
@@ -254,8 +280,12 @@ select:focus {
     width: 1080px;
     margin: 0 auto;
     padding: 0 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .title-container p {
     cursor: pointer;
@@ -290,11 +320,17 @@ select:focus {
     padding-top: 8px;
 }
 .product {
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    -o-transition: transform 0.5s;
     transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
     padding-bottom: 70px;
 }
 .product:hover {
-    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+            transform: translateY(-5px);
 }
 /* PRODUCTS STYLING ENDS HERE */
 
@@ -318,9 +354,13 @@ select:focus {
     cursor: pointer;
 }
 .company {
+    display: -ms-grid;
     display: grid;
-    align-content: center;
-    justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     grid-auto-flow: row;
 }
 .company img {
@@ -353,6 +393,8 @@ select:focus {
 .footer ul li a, .copyright a {
     text-decoration: none;
     color: #555555;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
 }
 .footer ul li a:hover, .copyright a:hover {
@@ -379,6 +421,8 @@ select:focus {
             background: #333333;
             width: 100%;
             overflow: hidden;
+            -webkit-transition: max-height 0.5s;
+            -o-transition: max-height 0.5s;
             transition: max-height 0.5s;
             z-index: 10;
         }
@@ -410,7 +454,8 @@ select:focus {
             float: left;
             width: 100%;
             padding-right: 0px;
-            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
         }
         .col-xs-12 { width: 100%;}
         .col-xs-11 { width: 91.662%;}
@@ -447,7 +492,9 @@ select:focus {
         width: 55px;
     }
     .product-details .small-container .img-row .col {
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     .product-details .small-container h1 {
         font-size: 30px;
@@ -462,8 +509,12 @@ select:focus {
         margin: 0 20px;
         margin-top: 50px;
         padding: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
     .title-container h2 {
         font-size: 19px;
@@ -493,6 +544,8 @@ select:focus {
     }
     .product img {
         width: 200px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;        
         margin: 0 auto;
     }
@@ -519,9 +572,13 @@ select:focus {
         cursor: pointer;
     }
     .company {
+        display: -ms-grid;
         display: grid;
-        align-content: center;
-        justify-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         grid-auto-flow: row;
     }
     .company img {
@@ -553,6 +610,8 @@ select:focus {
             background: #333333;
             width: 100%;
             overflow: hidden;
+            -webkit-transition: max-height 0.5s;
+            -o-transition: max-height 0.5s;
             transition: max-height 0.5s;
             z-index: 10;
         }
@@ -583,7 +642,8 @@ select:focus {
             float: left;
             width: 100%;
             padding-right: 0px;
-            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
         }
         .col-sm-12 { width: 100%;}
         .col-sm-11 { width: 91.662%;}
@@ -620,7 +680,9 @@ select:focus {
         width: 117px;
     }
     .product-details .small-container .img-row .col {
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     .product-details .small-container h1 {
         font-size: 30px;
@@ -635,8 +697,12 @@ select:focus {
         margin: 0 20px;
         margin-top: 50px;
         padding: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
     .title-container h2 {
         font-size: 19px;
@@ -692,9 +758,13 @@ select:focus {
         margin-right: 20px;
     }
     .company {
+        display: -ms-grid;
         display: grid;
-        align-content: center;
-        justify-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         grid-auto-flow: row;
     }
     .company img {
@@ -748,8 +818,12 @@ select:focus {
         margin: 0 70px;
         margin-top: 50px;
         padding: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
     .title-container h2 {
         font-size: 19px;

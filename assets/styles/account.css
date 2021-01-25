@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* CSS RESETS STARTS */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -69,9 +76,15 @@ time, mark, audio, video {
 header {
     width: 100%;
     height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
     /* STICKY HEADER STYLING STARTS HERE*/
     header.sticky {
@@ -79,7 +92,11 @@ header {
         top: 0;
         left: 0;
         right: 0;
-        transform: translateY(-200%);
+        -webkit-transform: translateY(-200%);
+            -ms-transform: translateY(-200%);
+                transform: translateY(-200%);
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
         transition: 0.3s;
         z-index: 3;
         width: 1300px;
@@ -113,6 +130,8 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #555555;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
 }
 nav ul li a:hover {
@@ -132,7 +151,8 @@ header a img {
     }
     .col {
         float: left;
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
     }
     .col-md-12 { width: 100%;}
     .col-md-11 { width: 91.662%;}
@@ -167,6 +187,7 @@ header a img {
 .account {
     width: 100%;
     padding: 50px 0;
+    background: -o-radial-gradient(#ffffff, #ffd6d6);
     background: radial-gradient(#ffffff, #ffd6d6);
 }
 .form-container {
@@ -177,7 +198,8 @@ header a img {
     text-align: center;
     padding: 20px 0;
     margin: 60px auto;
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 .form-container span {
@@ -196,7 +218,11 @@ header a img {
     padding: 0 20px;
     position: absolute;
     top: 130px;
+    -webkit-transition: -webkit-transform 0.7s;
+    transition: -webkit-transform 0.7s;
+    -o-transition: transform 0.7s;
     transition: transform 0.7s;
+    transition: transform 0.7s, -webkit-transform 0.7s;
 }
 form input {
     width: 220px;
@@ -223,6 +249,8 @@ form .btn:focus {
     padding: 8px 30px;
     margin: 30px 0;
     border-radius: 30px;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
     transition: 0.5s all;
 }
 .btn:hover {
@@ -245,8 +273,14 @@ form a {
     border: none;
     background: #ff523b;
     margin-top: 8px;
-    transform: translateX(52px);
+    -webkit-transform: translateX(52px);
+        -ms-transform: translateX(52px);
+            transform: translateX(52px);
+    -webkit-transition: -webkit-transform 0.7s;
+    transition: -webkit-transform 0.7s;
+    -o-transition: transform 0.7s;
     transition: transform 0.7s;
+    transition: transform 0.7s, -webkit-transform 0.7s;
 }
 /* ACCOUNT STYLING ENDS HERE */
 .clearfix {
@@ -269,9 +303,13 @@ form a {
     cursor: pointer;
 }
 .company {
+    display: -ms-grid;
     display: grid;
-    align-content: center;
-    justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     grid-auto-flow: row;
 }
 .company img {
@@ -304,6 +342,8 @@ form a {
 .footer ul li a, .copyright a {
     text-decoration: none;
     color: #555555;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
 }
 .footer ul li a:hover, .copyright a:hover {
@@ -330,6 +370,8 @@ form a {
             background: #333333;
             width: 100%;
             overflow: hidden;
+            -webkit-transition: max-height 0.5s;
+            -o-transition: max-height 0.5s;
             transition: max-height 0.5s;
             z-index: 10;
         }
@@ -361,7 +403,8 @@ form a {
             float: left;
             width: 100%;
             padding-right: 0px;
-            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
         }
         .col-xs-12 { width: 100%;}
         .col-xs-11 { width: 91.662%;}
@@ -414,9 +457,13 @@ form input {
         cursor: pointer;
     }
     .company {
+        display: -ms-grid;
         display: grid;
-        align-content: center;
-        justify-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         grid-auto-flow: row;
     }
     .company img {
@@ -448,6 +495,8 @@ form input {
             background: #333333;
             width: 100%;
             overflow: hidden;
+            -webkit-transition: max-height 0.5s;
+            -o-transition: max-height 0.5s;
             transition: max-height 0.5s;
             z-index: 10;
         }
@@ -478,7 +527,8 @@ form input {
             float: left;
             width: 100%;
             padding-right: 0px;
-            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
         }
         .col-sm-12 { width: 100%;}
         .col-sm-11 { width: 91.662%;}
@@ -528,9 +578,13 @@ form input {
         margin-right: 20px;
     }
     .company {
+        display: -ms-grid;
         display: grid;
-        align-content: center;
-        justify-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         grid-auto-flow: row;
     }
     .company img {
