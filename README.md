@@ -15,6 +15,4 @@
 
   To run this project, visit: 
   
-  * https://priyanshu020.github.io/easybuy/
-  
-  * https://xenodochial-engelbart-d44411.netlify.app/
+  https://xenodochial-engelbart-d44411.netlify.app/
