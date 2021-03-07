@@ -15,4 +15,4 @@
 
   To run this project, visit: 
   
-  https://xenodochial-engelbart-d44411.netlify.app/
+  https://easybuystore.netlify.app/
